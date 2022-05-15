@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <script src="https://kit.fontawesome.com/c995a71190.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    
+    
+    
+    <body>
+    
+    <nav class="navbar" id="navi">
+        
+            <div class=" box-1">
+        
+            <a href="#" onclick="openNav">
+                
+                <svg  class="fabars" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+                 
+                
+            </a>
+            
+            <i class="fa-brands fa-youtube" onclick="openNav"></i>
+            <p class="logotext">Youtube</p>    
+                
+            </div>
+        
+            <div  class="box-2">
+    
+                <input class="search-bar"  type="text" placeholder= "search" name="searchbar">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <i class="fa-solid fa-microphone"></i>
+            
+        
+                </div>
+        
+              <div class="box-3">
+                  
+                  <i class="fa-solid fa-grip"></i>
+                  
+                  <i class="fa-solid fa-video"></i>
+                
+              <a href="#" onclick="openNav()"> <img src="images/pic.jpeg" class=" profile"> </a> 
+            
+                
+        
+            </div>
+        
+        
+        </nav>
+
+        <!--  the div for the sidebar slide--> 
+
+         <div class="slidenav" id="navslide">
+             
+             
+             
+             
+              
+
+
+             <ul>
+             
+                 
+                 
+                 
+                  <li>  
+                      
+                      <a href="#" onclick="closeNav()">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="fabars2" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+                      </a>
+                    
+                      
+                      
+                      </li>   
+                 
+                 
+                 <li>  <a> 
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="home-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m4.293 10.707l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1 .293.707V21a1 1 0 0 1-1 1h-5v-7h-4v7H5a1 1 0 0 1-1-1v-9.586a1 1 0 0 1 .293-.707Z"/></svg>
+                     <span class=" home"> Home </span>
+                     </a>
+                 
+                 </li>   
+                 
+                 <li>  <a>
+                     
+                     
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="explore-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M22.707 9.293a1 1 0 0 0-1.023-.242l-9 3a1.001 1.001 0 0 0-.633.633l-3 9a1 1 0 0 0 1.265 1.265l9-3a1.001 1.001 0 0 0 .633-.633l3-9a1 1 0 0 0-.242-1.023ZM11.581 20.42l2.21-6.628l4.419 4.419Z"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4Z"/>
+                    </svg>
+                     
+                     <span class="Explore"> Explore</span>
+                     
+                     
+                     
+                         </a> </li>
+                     
+                     
+                 
+                     
+                     
+                     <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="suscribe-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg>
+                     
+                     <span class="suscribe">Suscribe</span>
+                     
+                     
+                     </a></li>
+                     
+                     
+                 <li>  <a>
+                     
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="library-icon"preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"/></svg>
+                     
+                      <span class="Library">Library</span>
+                     
+                     </a></li>   
+                     
+                     
+                 <li>  <a>
+                     
+                     
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
+                     
+                     <span class="historical"> Historical</span>
+                     
+                     </a></li> 
+                     
+                 
+                 
+                 <li>  <a> 
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="home-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m4.293 10.707l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1 .293.707V21a1 1 0 0 1-1 1h-5v-7h-4v7H5a1 1 0 0 1-1-1v-9.586a1 1 0 0 1 .293-.707Z"/></svg>
+                     <span class=" home"> Home </span>
+                     </a>
+                 
+                 </li>   
+                 
+                 <li>  <a>
+                     
+                     
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="explore-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M22.707 9.293a1 1 0 0 0-1.023-.242l-9 3a1.001 1.001 0 0 0-.633.633l-3 9a1 1 0 0 0 1.265 1.265l9-3a1.001 1.001 0 0 0 .633-.633l3-9a1 1 0 0 0-.242-1.023ZM11.581 20.42l2.21-6.628l4.419 4.419Z"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4Z"/>
+                    </svg>
+                     
+                     <span class="Explore"> Explore</span>
+                     
+                     
+                     
+                         </a> </li>
+                     
+                     
+                 
+                     
+                     
+                     <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="suscribe-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg>
+                     
+                     <span class="suscribe">Suscribe</span>
+                     
+                     
+                     </a></li>
+                     
+                     
+                 <li>  <a>
+                     
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="library-icon"preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"/></svg>
+                     
+                      <span class="Library">Library</span>
+                     
+                     </a></li>   
+                     
+                     
+                 <li>  <a>
+                     
+                     
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
+                     
+                     <span class="historical"> Historical</span>
+                     
+                     </a></li> 
+                 <li>  <a> 
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="home-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m4.293 10.707l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1 .293.707V21a1 1 0 0 1-1 1h-5v-7h-4v7H5a1 1 0 0 1-1-1v-9.586a1 1 0 0 1 .293-.707Z"/></svg>
+                     <span class=" home"> Home </span>
+                     </a>
+                 
+                 </li>   
+                 
+                 <li>  <a>
+                     
+                     
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="explore-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M22.707 9.293a1 1 0 0 0-1.023-.242l-9 3a1.001 1.001 0 0 0-.633.633l-3 9a1 1 0 0 0 1.265 1.265l9-3a1.001 1.001 0 0 0 .633-.633l3-9a1 1 0 0 0-.242-1.023ZM11.581 20.42l2.21-6.628l4.419 4.419Z"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4Z"/>
+                    </svg>
+                     
+                     <span class="Explore"> Explore</span>
+                     
+                     
+                     
+                         </a> </li>
+                     
+                     
+                 
+                     
+                     
+                     <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="suscribe-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg>
+                     
+                     <span class="suscribe">Suscribe</span>
+                     
+                     
+                     </a></li>
+                     
+                     
+                 <li>  <a>
+                     
+                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="library-icon"preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"/></svg>
+                     
+                      <span class="Library">Library</span>
+                     
+                     </a></li>   
+                     
+                     
+                 <li>  <a>
+                     
+                     
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
+                     
+                     <span class="historical"> Historical</span>
+                     
+                     </a></li> 
+                     
+                 <li>  <a>
+                     
+                     
+                     
+                     </a></li> 
+                     
+                     
+                     
+                     
+                
+                 <li>  <a></a></li>   
+                 <li>  <a></a></li>   
+                 <li>  <a></a></li>   
+                 <li>  <a></a></li>   
+                 <li>  <a></a></li>   
+                                 
+
+             
+             </ul>
+
+
+          </div>
+             
+             
+             <!-- End of the side bar section -->
+             
+
+        
+        <section class="fex-box" >
+            
+            
+            
+            <div  class= "side-bar">     
+            
+            <ul>
+            
+                <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m4.293 10.707l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1 .293.707V21a1 1 0 0 1-1 1h-5v-7h-4v7H5a1 1 0 0 1-1-1v-9.586a1 1 0 0 1 .293-.707Z"/></svg>
+                    <p>Home</p></a></li>
+                
+                
+                
+                <li><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M22.707 9.293a1 1 0 0 0-1.023-.242l-9 3a1.001 1.001 0 0 0-.633.633l-3 9a1 1 0 0 0 1.265 1.265l9-3a1.001 1.001 0 0 0 .633-.633l3-9a1 1 0 0 0-.242-1.023ZM11.581 20.42l2.21-6.628l4.419 4.419Z"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4Z"/>
+                    </svg>
+                    <p> Explore</p>
+                    </a></li>
+                  
+                
+                
+                <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg> 
+                    <p>Sucribe</p></a></li>
+                
+                
+                <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"/></svg><p>Library</p></a></li>
+                
+             
+                <li><a>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
+                    
+                    <p> Historical</p>
+                        
+                    </a></li>
+                
+            
+            </ul>
+        
+        
+                </div>
+            
+            <div class="main-page">
+            
+                <div class="main-box1"></div>
+                <div  class="main-box2"></div>
+                <div  class="main-box3"></div>
+                <div  class="main-box4"></div>
+            
+            </div>
+            
+            
+            
+            
+            
+        </section>
+    
+    </body>
+    
+    <script>
+        /* Set the width of the side navigation to 250px */
+       function openNav(){
+           document.getElementById("navslide").style.width = "300px";
+       }
+      
+        /* Set the width of the side navigation to 0 */
+        
+        function closeNav(){
+            
+            document.getElementById("navslide").style.width ="0px";
+        }
+        
+        
+
+    </script>
+    
+    
+</html>

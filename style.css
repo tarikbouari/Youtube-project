@@ -1,0 +1,225 @@
+
+/***** GENERAL *********/
+
+*{
+    
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    
+}
+
+body{
+    
+    position: relative;
+    
+}
+
+
+
+/***** NAVBAR*******/
+
+.navbar{
+    
+    width: 100%;
+    height: 70px;
+    border: 1px solid #e9e9e9;
+    display: flex;
+    padding-top: ; 
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+
+
+.box-2{
+     
+   
+  flex-basis : 50%;
+    
+  
+   
+    
+}
+.box-1{
+    
+    display:flex;
+    align-items: center;
+    flex-basis: 20%;
+     
+}
+.box-3{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+    flex-basis: 10%;
+    margin-right: 20px;
+}
+
+
+.fabars{
+   
+    
+    
+   background-color: red;
+    margin-left: 30px;
+    margin-right: 40px;
+   
+}
+
+.fa-youtube{
+
+    color: red;
+    font-size: 25px;
+   
+
+}
+
+.logotext{
+    font-size: 25px;
+    margin-left: 5px;
+}
+.log{
+    
+   color:red;
+}
+
+.fa-magnifying-glass{
+
+     color: black;
+    font-size: 20px;
+    background: red;
+   position: relative;
+    right: 49px;
+    padding: 12px;
+    top: 2px;
+     border-radius: 0px 10px 10px 0px ;
+    
+}
+
+
+.box-2 input[type=text]{
+  padding: 7px;
+  border: none ;
+  background-color: #e9e9e9 ;
+  font-size: 17px;
+}
+
+.search-bar{
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.fa-microphone{
+    color: #444;
+    font-size: 25px;
+    margin-left: 20px;
+    position: relative;
+    top:3px;
+    right:12px;
+}
+
+
+
+.fa-grip{
+    
+    color: #444;
+    font-size: 25px;
+}
+
+
+.profile{
+    width: 30px;
+    height: 30px;
+    
+    border-radius:100%;
+    border: 1px solid #444
+    
+}
+
+.fa-video{
+    
+    color:#444;
+    font-size: 25px; 
+}
+
+
+/******************** SECTION SIDE BAR***********************/
+
+
+.side-bar{
+    
+    height: 100vh;
+    width: 9%;
+    border: 1px solid #ccc;
+    left:0;
+    background-color: #e9e9e9;
+   
+   
+}
+
+section ul li{
+    
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 30px;
+    
+    
+ 
+}
+
+section ul li:hover a{
+    
+    padding-left: 10px;
+   transition: .4s;
+}
+
+
+
+/******************** Slide sidebar ***********************/
+
+.slidenav{
+    
+    height:1OOvh;
+    width: 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #e9e9e9;
+    overflow-x: hidden;
+    z-index: 1;
+    transition: .4s ;
+    padding-top: 10px;
+    
+}
+
+
+.slidenav ul li a {
+    
+    display: flex;
+    align-items: center;
+    padding:10px;
+    margin-left: 20px;
+    
+}
+
+.fabars2{
+   
+    
+    
+   background-color: red;
+   margin-bottom: 20px;
+    
+    
+    
+   
+}
+
+#navslide{
+    
+    overflow:auto;
+}
