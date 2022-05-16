@@ -21,14 +21,14 @@
         
             <div class=" box-1">
         
-            <a href="#" onclick="openNav">
+            <a href="#" onclick="openNav()">
                 
                 <svg  class="fabars" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
                  
                 
             </a>
             
-            <i class="fa-brands fa-youtube" onclick="openNav"></i>
+            <i class="fa-brands fa-youtube" onclick="openNav()"></i>
             <p class="logotext">Youtube</p>    
                 
             </div>
@@ -654,26 +654,15 @@
             
         </section>
     
+
+        <script src="script.js">
+     
+           
+
+        </script>
+        
     </body>
     
-    <script>
-        /* Set the width of the side navigation to 250px */
-       function openNav(){
-           document.getElementById("navslide").style.width = "260px";
-           document.getElementById("navslide").style.transition = " .5s";
-       }
-      
-        /* Set the width of the side navigation to 0 */
-        
-        function closeNav(){
-            
-            document.getElementById("navslide").style.width ="0px";
-            document.getElementById("navslide").style.transition = " .5s";
-        }
-        
-        
-
-    </script>
-    
+   
     
 </html>

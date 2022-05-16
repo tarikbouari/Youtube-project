@@ -13,6 +13,8 @@
 body{
     
     position: relative;
+    box-sizing: border-box;
+    
     
 }
 
@@ -26,9 +28,9 @@ body{
     height: 70px;
     border: 1px solid #e9e9e9;
     display: flex;
-    padding-top: ; 
     align-items: center;
     justify-content: space-between;
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.685);
    
     
 }
@@ -183,7 +185,7 @@ section ul li{
 
 section ul li:hover a{
     
-    padding-left: 10px;
+   padding-left: 10px;
    transition: .4s;
 }
 
@@ -215,6 +217,7 @@ section ul li:hover a{
     align-items: center;
     padding:10px 10px 10px 30px;
     line-height: 20px;
+    cursor: pointer;
    
     
 }
@@ -311,7 +314,7 @@ section ul li:hover a{
 .video-box .video-title .text {
 
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 17px;  
     width:200px ;
     line-height: 1.4 ;
     
