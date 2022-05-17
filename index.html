@@ -1,668 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube</title>
-    <script src="https://kit.fontawesome.com/c995a71190.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://kit.fontawesome.com/c995a71190.js" crossorigin="anonymous"></script>
+    
+    <title>Welcome to Youtube</title>
 </head>
-    
-    
-    
-    <body>
 
-         <!--    Navbar section            --> 
 
-    
-    <nav class="navbar" id="navi">
-        
-            <div class=" box-1">
-        
-            <a href="#" onclick="openNav()">
+<body>
+
+    <nav >
+      
+            <div class="navbar flex ">
+
+              <div class="left-bar flex">
                 
-                <svg  class="fabars" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
-                 
+                <img class=" icon"  onclick="openNav()" alt="Menu" src="images/list.png">
+               <i class="fa-brands fa-youtube" ></i>
+                  <p class="logotext">Youtube</p>  
+              </div>
+              
                 
-            </a>
-            
-            <i class="fa-brands fa-youtube" onclick="openNav()"></i>
-            <p class="logotext">Youtube</p>    
-                
-            </div>
-        
-            <div  class="box-2">
-    
-                <input class="search-bar"  type="text" placeholder= "search" name="searchbar">
-               <i class="fa-solid fa-magnifying-glass"></i>
-               <i class="fa-solid fa-microphone"></i>
-            
-        
+              <div class="midle-bar flex">
+                <input id="input" type="text" name="searche" placeholder="search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <img class=" icon" alt="mic" src="images/microphone-black-shape.png">
                 </div>
-        
-              <div class="box-3">
-                  
-                  <i class="fa-solid fa-grip"></i>
-                  
-                  <i class="fa-solid fa-video"></i>
+
+                <div class="right-bar flex">
+                  <img class=" icon" alt="Menu" src="images/add-video.png">
+                  <img class=" icon" alt="Menu" src="images/grid.png">
+                  <img class=" icon" alt="Menu" src="images/bell.png">
                 
-              <a href="#" onclick="openNav()"> <img src="images/pic.jpeg" class=" profile"> </a> 
-            
-                
-        
+                  <a href="#" onclick="openNav()"> <img src="images/pic.jpeg" class=" profile"> </a> 
+  
+  
+              </div>
+
             </div>
-        
-        
-        </nav>
+    </nav> <!--  close nav-->
+
 
         <!--  the div for the sidebar slide--> 
 
 
         
-         <div class="slidenav" id="navslide">
-             
-             
-             
-             
+        <div class="slidenav" id="navslide">
+
+          <ul>
               
+               <li>  
+                   
+                   <a href="#" onclick="closeNav()">
+                    <img class=" icon" alt="Menu" src="images/list.png">
+                   </a>
+                 
+                   
+                   
+                   </li>   
+              
+              
+              <li>  <a> 
+                  <img class=" icon" alt="Menu" src="images/home.png">
+                  <span class=" icon-descri"> Home </span>
+                  </a>
+              
+              </li>   
+              
+                      <li>
+                        <a>
+                  
+                     <img class=" icon" alt="Menu" src="images/direction.png">
+                        <span class=" icon-descri"> Explore</span>
+                  
+                      </a> 
+                    </li>
+                  
+                  
+              
+                  
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/subscribe.png">
+                  <span  class=" icon-descri">Suscribe</span>
+            
+                  </a></li>
+                  
+                  <hr>
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/library.png">
+                  <span  class=" icon-descri">Library</span>
+            
+                  </a></li>
+                 
+
+                     
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/historical.png">
+                  <span  class=" icon-descri">Historical</span>
+            
+                  </a></li>
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/youtube.png">
+                  <span  class=" icon-descri">Your videos</span>
+            
+                  </a></li>
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/clock.png">
+                  <span  class=" icon-descri">To Watch later</span>
+            
+                  </a></li>
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/like.png">
+                  <span  class=" icon-descri">"Like" videos</span>
+            
+                  </a></li>
 
 
-             <ul>
-             
+                   
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/expand-button.png">
+                  <span  class=" icon-descri">More</span>
+            
+                  </a></li>
+
                  
-                 
-                 
-                  <li>  
-                      
-                      <a href="#" onclick="closeNav()">
-                          <svg  xmlns="http://www.w3.org/2000/svg" class="fabars2" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
-                      </a>
+                    <hr>
+                  <li><a>
                     
-                      
-                      
-                      </li>   
-                 
-                 
-                 <li>  <a> 
-                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="home-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m4.293 10.707l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1 .293.707V21a1 1 0 0 1-1 1h-5v-7h-4v7H5a1 1 0 0 1-1-1v-9.586a1 1 0 0 1 .293-.707Z"/></svg>
-                     <span class=" icon-descri"> Home </span>
-                     </a>
-                 
-                 </li>   
-                 
-                 <li>  <a>
-                     
-                     
-                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="explore-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M22.707 9.293a1 1 0 0 0-1.023-.242l-9 3a1.001 1.001 0 0 0-.633.633l-3 9a1 1 0 0 0 1.265 1.265l9-3a1.001 1.001 0 0 0 .633-.633l3-9a1 1 0 0 0-.242-1.023ZM11.581 20.42l2.21-6.628l4.419 4.419Z"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4Z"/>
-                    </svg>
-                     
-                     <span class=" icon-descri"> Explore</span>
-                     
-                     
-                     
-                         </a> </li>
-                     
-                     
-                 
-                     
-                     
-                     <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="suscribe-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg>
-                     
-                     <span  class=" icon-descri">Suscribe</span>
-                     
-                     
-                     </a></li>
-                     
-                       <!-- Border buttom -->   
-                 <li>  <a class="Library" > 
-                     
-                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="library-icon"preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"/></svg>
-                     
-                      <span class=" icon-descri" >Library</span>
-                     
-                     </a></li>   
-                     
+                  <span  class=" icon-descri headline">Subscription</span>
+            
+                  </a></li>
+
+                  
+
+                  <li><a>
+                    <img src="images/pic.jpeg" class=" profile"> 
+                    <span  class=" icon-descri ">Tarik Bouari</span>
+              
+                    </a></li>
                     <li><a>
-                 <span class="suscribe"> Subcriptions</span>
+                      <img src="images/pic.jpeg" class=" profile"> 
+                      <span  class=" icon-descri ">SAID the developer</span>
                 
-                
+                      </a></li>
+
+                      <li><a>
+                        <img src="images/pic.jpeg" class=" profile"> 
+                        <span  class=" icon-descri ">Webdesin with Piesie</span>
+                  
+                        </a></li>
+    
+
+                        <hr>
+                        <li><a>
+                          
+                        <span  class=" icon-descri headline">Other youtube content</span>
+                  
+                        </a></li>
+                   
+
+
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/live.png">
+                        <span  class=" icon-descri">Live</span>
+                  
+                        </a></li>
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/console.png">
+                        <span  class=" icon-descri">Games</span>
+                  
                         </a></li>
 
-                 <li>  <a>
-                     
-                     
-
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                     
-                     <span  class=" icon-descri"> Historical</span>
-                     
-                     </a></li> 
-                     
-                 
-                 
-                 <li>  <a> 
-                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="home-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m4.293 10.707l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1 .293.707V21a1 1 0 0 1-1 1h-5v-7h-4v7H5a1 1 0 0 1-1-1v-9.586a1 1 0 0 1 .293-.707Z"/></svg>
-                     <span class=" icon-descri"> Home </span>
-                     </a>
-                 
-                 </li>   
-                 
-                 <li>  <a>
-                     
-                     
-                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="explore-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M22.707 9.293a1 1 0 0 0-1.023-.242l-9 3a1.001 1.001 0 0 0-.633.633l-3 9a1 1 0 0 0 1.265 1.265l9-3a1.001 1.001 0 0 0 .633-.633l3-9a1 1 0 0 0-.242-1.023ZM11.581 20.42l2.21-6.628l4.419 4.419Z"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4Z"/>
-                    </svg>
-                     
-                     <span  class=" icon-descri"> Explore</span>
-                     
-                     
-                     
-                         </a> </li>
-                     
-                     
-                 
-                     
-                     
-                     <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="suscribe-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg>
-                     
-                     <span  class=" icon-descri">Suscribe</span>
-                     
-                     
-                     </a></li>
-                     
-                     
-                 <li>  <a>
-                     
-                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="library-icon"preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"/></svg>
-                     
-                      <span  class=" icon-descri">Library</span>
-                     
-                     </a></li>   
-                     
-                      <!-- Border buttom -->   
-                 <li>  <a class="Library">
-                     
-                     
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                     
-                     <span  class=" icon-descri"> Historical</span>
-                     
-                     </a></li> 
-
-                     <li><a>
-                        <span class="suscribe"> Other Youtube content</span>
-                       
-                       
-                               </a></li>
-                 <li>  <a> 
-                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="home-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m4.293 10.707l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1 .293.707V21a1 1 0 0 1-1 1h-5v-7h-4v7H5a1 1 0 0 1-1-1v-9.586a1 1 0 0 1 .293-.707Z"/></svg>
-                     <span  class=" icon-descri"> Home </span>
-                     </a>
-                 
-                 </li>   
-                 
-                 <li>  <a>
-                     
-                     
-                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="explore-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M22.707 9.293a1 1 0 0 0-1.023-.242l-9 3a1.001 1.001 0 0 0-.633.633l-3 9a1 1 0 0 0 1.265 1.265l9-3a1.001 1.001 0 0 0 .633-.633l3-9a1 1 0 0 0-.242-1.023ZM11.581 20.42l2.21-6.628l4.419 4.419Z"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4Z"/>
-                    </svg>
-                     
-                     <span  class=" icon-descri"> Explore</span>
-                     
-                     
-                     
-                         </a> </li>
-                     
-                     
-                 
-                     
-                     
-                     <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px"  class="suscribe-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg>
-                     
-                     <span class=" icon-descri">Suscribe</span>
-                     
-                     
-                     </a></li>
-                     
-                     <!-- Border buttom -->    
-                 <li>  <a class="Library">
-                     
-                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="library-icon"preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"/></svg>
-                     
-                      <span  class=" icon-descri">Library</span>
-                     
-                     </a></li>   
-                     
-                     
-                 <li>  <a>
-                     
-                     
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                     
-                     <span  class=" icon-descri"> Historical</span>
-                     
-                     </a></li> 
-                     <li>  <a>
-                     
-                     
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                         
-                         <span  class=" icon-descri"> Historical</span>
-                         
-                         </a></li>   <li>  <a>
-                     
-                     
-                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                             
-                             <span  class=" icon-descri"> Historical</span>
-                             
-                             </a></li>   <li>  <a>
-                     
-                     
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                                 
-                                 <span  class=" icon-descri"> Historical</span>
-                                 
-                                 </a></li> 
-                                 <li>  <a>
-                     
-                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                                     
-                                     <span  class=" icon-descri"> Historical</span>
-                                     
-                                     </a></li> 
-                                     <li>  <a>
-                     
-                     
-                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                                         
-                                         <span  class=" icon-descri"> Historical</span>
-                                         
-                                         </a></li> 
-                                         <li>  <a>
-                     
-                     
-                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30px" height="30px" class="historical-icon " preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                                             
-                                             <span  class=" icon-descri"> Historical</span>
-                                             
-                                             </a></li> 
-                     
-                 <li>  <a>
-                     
-                     
-                     
-                     </a></li> 
-                     
-                     
-                     
-                     
-                
-                 <li>  <a></a></li>   
-                 <li>  <a></a></li>   
-                 <li>  <a></a></li>   
-                 <li>  <a></a></li>   
-                 <li>  <a></a></li>   
-                                 
-
-             
-             </ul>
-
-
-          </div>
-        
-       
-             <!-- End of the side bar section -->
-             
-
-        
-        <section class="flex-box" >
-            
-            
-            
-            <div  class= "side-bar">     
-            
-            <ul>
-            
-                <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m4.293 10.707l7-7a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1 .293.707V21a1 1 0 0 1-1 1h-5v-7h-4v7H5a1 1 0 0 1-1-1v-9.586a1 1 0 0 1 .293-.707Z"/></svg>
-                    <p>Home</p>
-                </a></li>
-                
-                
-                
-                <li>
-                    <a>
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M22.707 9.293a1 1 0 0 0-1.023-.242l-9 3a1.001 1.001 0 0 0-.633.633l-3 9a1 1 0 0 0 1.265 1.265l9-3a1.001 1.001 0 0 0 .633-.633l3-9a1 1 0 0 0-.242-1.023ZM11.581 20.42l2.21-6.628l4.419 4.419Z"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4Z"/>
-                    </svg>
-                    <p> Explore</p>
-                    </a></li>
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/dress.png">
+                        <span  class=" icon-descri">Fashion and Beauty</span>
                   
-                
-                
-                <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg> 
-                    <p>Sucribe</p></a></li>
-                
-                
-                <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"/></svg><p>Library</p></a></li>
-                
-             
-                <li><a>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                    
-                    <p> Historical</p>
-                        
-                    </a></li>
-                    
-                <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg> 
-                    <p>Sucribe</p></a></li>
-                
-            
-                <li><a>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1c-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29c-3.51 3.48-9.21 3.48-12.72 0c-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08l-.72 1.21L11 13V8h1.5z"/></svg>
-                    
-                    <p> Historical</p>
-                        
-                    </a></li>
-                    
-                <li><a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"/></svg> 
-                    <p>Sucribe</p></a></li>
-                
-                
-                
-            
-            </ul>
-        
-        
-                </div>
-            
-            <div class="main-page">
-            
-                <div class="banner">
-                   
-                </div>
-                   
+                        </a></li>
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/idea.png">
+                        <span  class=" icon-descri">Knowledge & Culture</span>
+                  
+                        </a></li>
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/trophy.png">
+                        <span  class=" icon-descri">Sport</span>
+                  
+                        </a></li>
+                        <hr>
 
-                <!-- start of main box (4video) -->
-                  <div class="main-box">
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/settings.png">
+                        <span  class=" icon-descri">Settings</span>
+                  
+                  
+                        </a></li>
 
-                <div   class="video-box">
-                    <iframe width="270" height="150"
-                        src="https://www.youtube.com/embed/hinoioN1_14">
-                    </iframe>
-                    <div class="video-title">  
-                        <img src="images/pic.jpeg" class=" profile1">
-                      <span class="text">
-                        Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                        <p class=" video-details">
-                             <small>  
-                            Rikstone <br>
-                            100k views . 2 months </p>
-                        </small> 
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/help.png">
+                        <span  class=" icon-descri">Aid</span>
+                  
+                        </a></li>
+      
 
-                      </span> 
-                    </div>
-                </div>
+                  </ul>
+
+                  </div>
 
 
-                <div  class="video-box">
-                    <iframe width="270" height="150"
-                        src="https://www.youtube.com/embed/lAOkx2yZESY">
-                    </iframe>
-                    <div class="video-title">  
-                        <img src="images/pic.jpeg" class=" profile1">
-                      <span class="text">
-                        Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                        <p class=" video-details">
-                             <small>  
-                            Rikstone <br>
-                            100k views . 2 months </p>
-                        </small> 
-
-                      </span> 
-                    </div>
-                    
-                    
-                </div>
-
-                <div  class="video-box">
-                    <iframe width="270" height="150"
-                        src="https://www.youtube.com/embed/lAOkx2yZESY">
-                    </iframe>
-                    <div class="video-title">  
-                        <img src="images/pic.jpeg" class=" profile1">
-                      <span class="text">
-                        Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                        <p class=" video-details">
-                             <small>  
-                            Rikstone <br>
-                            100k views . 2 months </p>
-                        </small> 
-
-                      </span> 
-                    </div>
-                    
-                </div>
-                <div  class="video-box">
-                    <iframe width="270" height="150"
-                        src="https://www.youtube.com/embed/lAOkx2yZESY">
-                    </iframe>
-                    <div class="video-title">  
-                        <img src="images/pic.jpeg" class=" profile1">
-                      <span class="text">
-                        Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                        <p class=" video-details">
-                             <small>  
-                            Rikstone <br>
-                            100k views . 2 months </p>
-                        </small> 
-
-                      </span> 
-                    </div>
-                    
-                </div>
-            </div>
-                <!-- End of main box (4video) -->
-
-
-
-            
-                <!-- start of main box (4video) -->
-                <div class="main-box">
-
-                    <div   class="video-box">
-                        <iframe width="270" height="150"
-                            src="https://www.youtube.com/embed/hinoioN1_14">
-                        </iframe>
-                        <div class="video-title">  
-                            <img src="images/pic.jpeg" class=" profile1">
-                          <span class="text">
-                            Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                            <p class=" video-details">
-                                 <small>  
-                                Rikstone <br>
-                                100k views . 2 months </p>
-                            </small> 
-    
-                          </span> 
-                        </div>
-                    </div>
-    
-    
-                    <div  class="video-box">
-                        <iframe width="270" height="150"
-                            src="https://www.youtube.com/embed/lAOkx2yZESY">
-                        </iframe>
-                        <div class="video-title">  
-                            <img src="images/pic.jpeg" class=" profile1">
-                          <span class="text">
-                            Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                            <p class=" video-details">
-                                 <small>  
-                                Rikstone <br>
-                                100k views . 2 months </p>
-                            </small> 
-    
-                          </span> 
-                        </div>
-                        
-                        
-                    </div>
-    
-                    <div  class="video-box">
-                        <iframe width="270" height="150"
-                            src="https://www.youtube.com/embed/lAOkx2yZESY">
-                        </iframe>
-                        <div class="video-title">  
-                            <img src="images/pic.jpeg" class=" profile1">
-                          <span class="text">
-                            Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                            <p class=" video-details">
-                                 <small>  
-                                Rikstone <br>
-                                100k views . 2 months </p>
-                            </small> 
-    
-                          </span> 
-                        </div>
-                        
-                    </div>
-                    <div  class="video-box">
-                        <iframe width="270" height="150"
-                            src="https://www.youtube.com/embed/lAOkx2yZESY">
-                        </iframe>
-                        <div class="video-title">  
-                            <img src="images/pic.jpeg" class=" profile1">
-                          <span class="text">
-                            Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                            <p class=" video-details">
-                                 <small>  
-                                Rikstone <br>
-                                100k views . 2 months </p>
-                            </small> 
-    
-                          </span> 
-                        </div>
-                        
-                    </div>
-                </div>
-                    <!-- End of main box (4video) -->
-    
-
-                
-               
-                <!-- start of main box (4video) -->
-                  <div class="main-box">
-
-                <div   class="video-box">
-                    <iframe width="270" height="150"
-                        src="https://www.youtube.com/embed/hinoioN1_14">
-                    </iframe>
-                    <div class="video-title">  
-                        <img src="images/pic.jpeg" class=" profile1">
-                      <span class="text">
-                        Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                        <p class=" video-details">
-                             <small>  
-                            Rikstone <br>
-                            100k views . 2 months </p>
-                        </small> 
-
-                      </span> 
-                    </div>
-                </div>
-
-
-                <div  class="video-box">
-                    <iframe width="270" height="150"
-                        src="https://www.youtube.com/embed/lAOkx2yZESY">
-                    </iframe>
-                    <div class="video-title">  
-                        <img src="images/pic.jpeg" class=" profile1">
-                      <span class="text">
-                        Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                        <p class=" video-details">
-                             <small>  
-                            Rikstone <br>
-                            100k views . 2 months </p>
-                        </small> 
-
-                      </span> 
-                    </div>
-                    
-                    
-                </div>
-
-                <div  class="video-box">
-                    <iframe width="270" height="150"
-                        src="https://www.youtube.com/embed/lAOkx2yZESY">
-                    </iframe>
-                    <div class="video-title">  
-                        <img src="images/pic.jpeg" class=" profile1">
-                      <span class="text">
-                        Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                        <p class=" video-details">
-                             <small>  
-                            Rikstone <br>
-                            100k views . 2 months </p>
-                        </small> 
-
-                      </span> 
-                    </div>
-                    
-                </div>
-                <div  class="video-box">
-                    <iframe width="270" height="150"
-                        src="https://www.youtube.com/embed/lAOkx2yZESY">
-                    </iframe>
-                    <div class="video-title">  
-                        <img src="images/pic.jpeg" class=" profile1">
-                      <span class="text">
-                        Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
-                        <p class=" video-details">
-                             <small>  
-                            Rikstone <br>
-                            100k views . 2 months </p>
-                        </small> 
-
-                      </span> 
-                    </div>
-                    
-                </div>
-            </div>
-                <!-- End of main box (4video) -->
-
-            
-            
+     <div class="container2">
 
 
 
 
 
-            
-            
 
-            </div>
-            
-            
-            
-            
-            
-        </section>
-    
 
-        <script src="script.js">
+       <!--  Div for side bar-->
+
+
+      <div class="sidebar">
      
+         <ul>
            
+          <li> <a>
+            <img class=" icon" alt="Menu" src="images/home.png"><br>
+          <span  class=" icon-descri">Home</span>
+    
+          </a></li>
+          <li><a>
+            <img class=" icon" alt="Menu" src="images/direction.png"><br>
+          <span  class=" icon-descri">Explore</span>
+    
+          </a></li>
+          <li><a>
+            <img class=" icon" alt="Menu" src="images/subscribe.png"><br>
+          <span  class=" icon-descri">Suscribe</span>
+    
+          </a></li>
+          <li><a>
+            <img class=" icon" alt="Menu" src="images/library.png"><br>
+          <span  class=" icon-descri">Library</span>
+    
+          </a></li>
+          <li><a>
+            <img class=" icon" alt="Menu" src="images/historical.png"><br>
+          <span  class=" icon-descri">Historical</span>
+    
+          </a></li>
+  
+            
+            
+            
 
-        </script>
+         
+
+         </ul>
+         </div> <!-- sidebar close-->
+
+
+         <div class="main-page">
+            
+          <div class="banner">
+             
+          </div>
+             
+          <div class="grid-box">
+
+
+
+          <!-- start of visdeo box (4video) -->
+               <div   class="video-box">
+              <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+              </iframe>
+            
+              <div class="video-title">  
+                  <img src="images/pic.jpeg" class=" profile1">
+                <span class="text">
+                  Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                  <p class=" video-details">
+                       <small>  
+                      Rikstone <br>
+                      100k views . 2 months </p>
+                  </small> 
+
+                      </span> 
+                      </div>
+          </div>
+
+              <!-- end of viode box (4video) -->
+
+
+              
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
+          
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
+        </div>
+
+            <!-- end of viode box (4video) -->
+
+
+
+
+            
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
+          
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
+        </div>
+
+            <!-- end of viode box (4video) -->
+
+
+
+            
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
+          
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
+        </div>
+
+            <!-- end of viode box (4video) -->
+          
+
+            
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
+          
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
+        </div>
+
+            <!-- end of viode box (4video) -->
+
+
+            
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
         
-    </body>
-    
-   
-    
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+
+          
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+          
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+        
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
+          
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
+        </div>
+
+            <!-- end of viode box (4video) -->
+
+
+            
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+
+          
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+          
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+              
+              
+          </div> <!-- grid box close-->
+          
+  
+
+
+
+
+
+    </div> <!--  Main page vlose-->
+
+
+<!--   cointainer close-->
+    </div> 
+
+
+<script src="script.js"></script>
+
+</body>
+
+
 </html>
