@@ -211,14 +211,19 @@ nav {
 
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 20px 30px;
     line-height: 20px;
     cursor: pointer;
-    margin-left: 10px;
+    
     text-decoration: none;
 
 
 
+}
+
+.slidenav ul li a:hover{
+
+    background-color: rgba(31, 37, 37, 0.034);
 }
 
    
