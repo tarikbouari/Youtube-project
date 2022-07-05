@@ -1,6 +1,4 @@
 
-// browser would get acess to the javascript code when th page finish loading
-document.addEventListener('DOMcontentloaded', () =>{
 
 
 /* Set the width of the side navigation to 250px */
@@ -18,14 +16,20 @@ function closeNav(){
 }
 
 
-const pressMoon = document.querySelector("svg");
-const page = document.querySelector("body")
+// browser would get acess to the javascript code when the page will finish loading.
+// document.addEventListener('DOMcontentloaded', () =>{
 
-document.addEventListener('click', () => {
+
+const pressMoon = document.querySelector(".mode-switch");
+
+
+pressMoon.addEventListener('click', () => {
+
+  document.documentElement.classList.toggle('gray');
   pressMoon.classList.toggle('moon');
   
 
 });
 
 
-});
+// });
